@@ -10,6 +10,26 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
+}
+
+/* flex container with flex items centered vertically */
+.information-section {
+  display: flex;
+  flex-direction: column; /* arrange in vertical mode */
+  align-items: center;
+  justify-content: center;
+}
+
+.plants {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+.item-plant {
+  width: 200px;
+  text-align: center;
 }
 
 /* do not edit this footer */
