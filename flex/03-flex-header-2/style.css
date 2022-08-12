@@ -12,6 +12,9 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 8px;
+  display: flex; /* Apply flexbox to the link groups */
+  align-items: center; /* Center those groups vertically */
 }
 
 .profile-image {
@@ -45,4 +48,22 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0; /* Remove the left padding thatcomes by default */
+  display: flex; /* Convert ul into a flex container */
+  gap: 16px; /* flexbox gap */
+}
+
+li {
+  display: inline; /* Display horizontally the bullet items */
+}
+
+.left-group {
+  display: flex; /* Convert this group into a flex container */
+  gap: 16px;
+}
+
+.right-group {
+  margin-left: auto; /* Move the group to the right edge */
+  display: flex; /* Convert this group into a flex container */
+  gap: 16px; /* flexbox gap */
 }
