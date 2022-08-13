@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex; /* Make the tag body a flex container */
+  flex-direction: column; /* Arrange in vertical mode the flex items */
 }
 
 img {
@@ -24,4 +26,60 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+button {
+  padding: 10px;
+}
+
+/* Remove bullet circles from the list items */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Convert this into a flex container */
+  gap: 15px; /*Gap between flex elements */
+}
+
+/* Display the items in one horizontal line */
+li {
+  display: inline;
+}
+
+.main-section {
+  flex: 1; /* Make this the only flex item able to grow (sending .footer to the bottom) */
+  /* Make this a new flex container */
+  display: flex;
+  flex-direction: column; /* Display its flex items in column mode */
+}
+
+.footer {
+  background-color: #eeeeee;
+  padding: 15px;
+  display: flex; /* Make .footer a flex container */
+}
+
+/* parent flex container -> .main-section */
+.header {
+  padding: 15px;
+  display: flex; /* Make this a flex container */ 
+}
+
+.content {
+  flex: 1; /* Make this flex item grow to fill space available (This will make possible to center its flex-items) */
+  display: flex; /* Make this a flex container */
+  flex-direction: column; /* Arrange its flex items in vertical mode */
+  /* Center the flex items */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  gap: 10px;
+}
+
+.right-links {
+  margin-left: auto; /* Push the right links to the right edge */
 }
